@@ -1,0 +1,52 @@
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  position: absolute;
+  bottom: 90px;
+  left: 49%;
+  display: flex;
+}
+
+.slick-dots li {
+  margin: 0 17px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    top: 10px;
+    left: 5.5px;
+
+    background-color: transparent;
+    border: 1px solid #283136;
+    border-radius: 50%;
+  }
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  width: 18px;
+  height: 18px;
+
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: @white;
+}

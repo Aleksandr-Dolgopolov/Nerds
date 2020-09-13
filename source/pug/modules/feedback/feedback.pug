@@ -1,0 +1,17 @@
+.feedback.modal-close
+  h2.visually-hidden Форма обратной связи
+  form(action="#" method="POST").feedback__form
+    .form__row.form__row--head
+      h2.form__title Напишите нам
+      button(type="button").form__button-exit
+    .form__row.form__row--body
+      .form__column
+        label(for="form-name").form__label Ваше имя:
+        input(id="form-name" type="text" name="name" placeholder="Имя Фамилия" required).form__input
+      .form__column
+        label(for="form-email").form__label Ваш e-mail:
+        input(id="form-email" type="email" name="email" placeholder="email@example.com" required).form__input
+    .form__column
+      label(for="form-message").form__label Текст письма:
+      textarea(id="form-message" name="message" placeholder="В свободной форме").form__text.form__textarea
+    button(type="submit").form__button.button Отправить

@@ -1,0 +1,76 @@
+.button {
+  display: block;
+
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: @white;
+  border-radius: 4px;
+
+  background-color: @bg-color-button-red;
+
+  &:hover {
+    background-color: @bg-color-button-red--hover
+  }
+
+  &:active {
+    background-color: @bg-color-button-red--active;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.features__button {
+  width: 240px;
+  height: 50px;
+
+  padding-top: 17px;
+}
+
+.services__button {
+  width: 160px;
+  height: 50px;
+
+  padding-top: 17px;
+
+  &--green {
+    background-color: @bg-color-button-green;
+
+    &:hover {
+      background-color: @bg-color-button-green--hover;
+    }
+
+    &:active {
+      background-color: @bg-color-button-green--active;
+    }
+  }
+
+  &--yellow {
+    background-color: @bg-color-button-yellow;
+
+    &:hover {
+      background-color: @bg-color-button-yellow--hover;
+    }
+
+    &:active {
+      background-color: @bg-color-button-yellow--active;
+    }
+  }
+}
+
+.contacts__button {
+  width: 220px;
+  height: 50px;
+  padding-top: 16px;
+}
+
+.form__button {
+  width: 260px;
+  height: 50px;
+
+  border: none;
+}

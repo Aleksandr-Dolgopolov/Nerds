@@ -1,0 +1,15 @@
+extends layout/main
+
+block variables
+  -var title = 'Nerds'
+  -var header = 'Добро пожаловать на сайт Nerds'
+
+block content
+  include modules/features/features
+  include modules/services/services
+  include modules/company/company
+  include modules/partner/partner
+  include modules/map/map
+
+block popup
+  include modules/feedback/feedback
